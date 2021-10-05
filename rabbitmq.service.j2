@@ -1,0 +1,21 @@
+# https://github.com/rabbitmq/rabbitmq-server/blob/master/deps/rabbit/docs/rabbitmq-server.service.example
+
+[Unit]
+Description=RabbitMQ
+After=network.target epmd@0.0.0.0.socket
+Wants=network.target epmd@0.0.0.0.socket
+
+[Service]
+Type=notify
+NotifyAccess=all
+TimeoutStartSec=3600
+
+ExecStart=/usr/local/rabbitmq/rabbitmq_server-{{rabbitmq_version}}/sbin/rabbitmq-server
+ExecStop=/usr/local/rabbitmq/rabbitmq_server-{{rabbitmq_version}}/sbin/rabbitmqctl stop
+ExecStop=/bin/sh -c "while ps -p $MAINPID >/dev/null 2>&1; do sleep 1; done"
+
+User=rabbitmq
+Group=rabbitmq
+
+[Install]
+WantedBy=multi-user.target
