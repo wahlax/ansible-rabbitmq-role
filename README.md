@@ -5,7 +5,7 @@ Start of a template for installing and configuring rabbitmq
 ## Parameters
 
  * `rabbitmq_version` - Version of RabbitMQ
- * `rabbitmq_download_url: URL of tar.xz for release
+ * `rabbitmq_download_url` - URL of tar.xz for release
 
 ## Testing
 
