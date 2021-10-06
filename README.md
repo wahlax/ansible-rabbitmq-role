@@ -6,6 +6,8 @@ Start of a template for installing and configuring rabbitmq
 
  * `rabbitmq_version` - Version of RabbitMQ
  * `rabbitmq_download_url` - URL of tar.xz for release
+ * `erlang_version` - Version of Erlang
+ * `erlang_download_url` - URL of RPM for erlang
 
 ## Testing
 
