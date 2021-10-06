@@ -73,7 +73,9 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "playbook.yml"
     ansible.extra_vars = {
       rabbitmq_version: '3.9.7',
-      rabbitmq_download_url: 'https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.9.7/rabbitmq-server-generic-unix-3.9.7.tar.xz'
+      rabbitmq_download_url: 'https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.9.7/rabbitmq-server-generic-unix-3.9.7.tar.xz',
+      erlang_version: '23.4.4.7-1',
+      erlang_download_url: 'https://github.com/rabbitmq/erlang-rpm/releases/download/v23.3.4.7/erlang-23.3.4.7-1.el7.x86_64.rpm'
     }
   end
 end
