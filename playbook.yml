@@ -13,6 +13,9 @@
   
   tasks:
 
+  - name: Include variables
+    ansible.builtin.include_vars: variables.yml
+
   - name: Create rabbitmq group
     ansible.builtin.group:
       name: rabbitmq
