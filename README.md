@@ -1,8 +1,8 @@
 # RabbitMQ with Ansible
 
-Start of a template for installing and configuring rabbitmq
+Role for installing and configuring rabbitmq
 
-## Parameters
+## Optional Parameters
 
  * `rabbitmq_version` - Version of RabbitMQ
  * `rabbitmq_download_url` - URL of tar.xz for release
@@ -12,6 +12,8 @@ Start of a template for installing and configuring rabbitmq
 ## Testing
 
 Credit: Tested with vagrant image from [@geerlingguy's Ansible for Devops](https://github.com/geerlingguy/ansible-for-devops)
+
+Run the following from the test directory:
 
 ### Initial Install
 ```
