@@ -4,4 +4,4 @@
   become: yes
 
   roles:
-    - { role: ../../ansible-rabbitmq-role }
+    - ../../ansible-rabbitmq-role
