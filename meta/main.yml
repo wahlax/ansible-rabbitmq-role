@@ -1,3 +1,10 @@
 ---
 
 dependencies: []
+
+galaxy_info:
+  role_name: rabbitmq
+  author: wahlax
+  description: RabbitMQ install for linux
+  company: WAHLAX LLC
+  license: MIT
